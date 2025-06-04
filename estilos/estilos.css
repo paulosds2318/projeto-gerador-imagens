@@ -1,0 +1,238 @@
+/* Estilos gerais */
+body {
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradiente de fundo do corpo da página (de roxo para azul) */
+  font-family: 'Segoe UI', sans-serif; /* Define a fonte padrão para o corpo do site */
+  margin: 0; /* Remove a margem padrão do body */
+  padding: 0; /* Remove o preenchimento padrão do body */
+  color: #fff; /* Define a cor do texto como branco */
+}
+
+/* Cabeçalho */
+header {
+  text-align: center; /* Centraliza o conteúdo dentro do header */
+  margin-top: 4em; /* Adiciona uma margem superior ao cabeçalho para separar do topo */
+}
+
+h1 {
+  font-size: 2.5rem; /* Define o tamanho da fonte do título principal */
+  color: #ffd700; /* Define a cor do título como dourado */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra no texto para destacá-lo */
+  margin-bottom: 1em; /* Adiciona uma margem abaixo do título */
+}
+
+p {
+  font-size: 1.1rem; /* Define o tamanho da fonte dos parágrafos */
+  line-height: 1.8; /* Aumenta o espaçamento entre as linhas para melhorar a legibilidade */
+  color: #ddd; /* Define a cor do texto dos parágrafos como cinza claro */
+  margin-bottom: 1em; /* Adiciona uma margem inferior para separar os parágrafos */
+  text-align: center; /* Centraliza o texto do parágrafo */
+}
+
+ol {
+  margin: 0 auto; /* Define a margem automática para centralizar a lista */
+  width: 70%; /* Define a largura da lista para 70% da largura da tela */
+  padding: 1em; /* Adiciona um preenchimento ao redor da lista */
+  background: #2a2a40; /* Define o fundo da lista como um tom escuro de azul */
+  border-radius: 8px; /* Arredonda os cantos da lista */
+}
+
+ol li {
+  margin-bottom: 0.8em; /* Adiciona uma margem inferior entre os itens da lista */
+}
+
+/* Navegação */
+nav {
+  position: fixed; /* Torna a navegação fixa no topo da tela */
+  top: 0; /* Define a posição da navegação no topo da tela */
+  left: 0; /* Define a posição da navegação à esquerda */
+  width: 100%; /* Faz a navegação ocupar toda a largura da tela */
+  background-color: #1e1e2f; /* Define o fundo da navegação como um tom escuro */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* Adiciona uma sombra sutil para dar profundidade */
+  padding: 1em; /* Adiciona um preenchimento interno à navegação */
+  z-index: 10; /* Define a sobreposição da navegação acima de outros elementos */
+}
+
+nav ul {
+  display: flex; /* Torna a lista de navegação um flex container */
+  justify-content: center; /* Alinha os itens da lista horizontalmente no centro */
+  list-style-type: none; /* Remove os pontos da lista */
+  padding: 0; /* Remove o preenchimento padrão da lista */
+  margin: 0; /* Remove a margem padrão da lista */
+}
+
+nav ul li {
+  margin: 0 1.5em; /* Adiciona margem lateral entre os itens da lista */
+}
+
+nav ul li a {
+  color: #00eaff; /* Define a cor dos links como azul claro */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: bold; /* Torna os links em negrito */
+  transition: color 0.3s ease; /* Adiciona uma transição suave na mudança de cor ao passar o mouse */
+}
+
+nav ul li a:hover {
+  color: #00ffc3; /* Muda a cor dos links para um azul mais claro ao passar o mouse */
+  text-shadow: 0 0 8px #00ffc3; /* Adiciona um efeito de brilho ao texto ao passar o mouse */
+}
+
+/* Tabelas */
+table {
+  width: 100%; /* A tabela ocupa toda a largura disponível */
+  border-collapse: collapse; /* Remove espaços entre as células */
+  margin-top: 2em; /* Adiciona uma margem superior para separar a tabela do conteúdo anterior */
+  background-color: #2e2e4d; /* Define o fundo da tabela */
+  color: #fff; /* Define a cor do texto na tabela como branco */
+  border-radius: 8px; /* Arredonda os cantos da tabela */
+  overflow: hidden; /* Garante que o conteúdo extra não ultrapasse os limites da tabela */
+}
+
+th, td {
+  border: 1px solid #444; /* Define a cor da borda das células */
+  padding: 1em; /* Adiciona preenchimento nas células */
+  text-align: left; /* Alinha o texto à esquerda nas células */
+}
+
+th {
+  background-color: #3f3fbf; /* Define o fundo das células de título como um tom de azul */
+  color: #fff; /* Define a cor do texto nas células de título como branco */
+  font-weight: bold; /* Torna o texto nas células de título em negrito */
+}
+
+table img {
+  width: 100%; /* Faz as imagens ocupar toda a largura da célula */
+  border-radius: 8px; /* Arredonda os cantos das imagens */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra nas imagens */
+}
+
+/* Botões */
+button {
+  background-color: #00eaff; /* Define a cor de fundo do botão como azul claro */
+  color: #fff; /* Define a cor do texto do botão como branco */
+  border: none; /* Remove a borda padrão do botão */
+  padding: 0.8em 2em; /* Adiciona um preenchimento ao redor do texto do botão */
+  border-radius: 8px; /* Arredonda os cantos do botão */
+  font-size: 1.1rem; /* Define o tamanho da fonte do botão */
+  cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave para cor e sombra */
+}
+
+button:hover {
+  background-color: #00ffc3; /* Muda a cor de fundo do botão quando o mouse passa sobre ele */
+  box-shadow: 0 4px 15px rgba(0, 255, 195, 0.6); /* Adiciona uma sombra quando o mouse passa sobre o botão */
+}
+
+button:active {
+  background-color: #00bfae; /* Muda a cor do botão quando ele é clicado */
+}
+
+/* Formulário */
+form {
+  background-color: #2a2a40; /* Define o fundo do formulário */
+  padding: 2em; /* Adiciona preenchimento ao redor do formulário */
+  border-radius: 12px; /* Arredonda os cantos do formulário */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* Adiciona uma sombra no formulário */
+  max-width: 600px; /* Define uma largura máxima para o formulário */
+  margin: 2em auto; /* Centraliza o formulário na tela */
+}
+
+form label {
+  font-size: 1.1rem; /* Define o tamanho da fonte do rótulo */
+  color: #fff; /* Define a cor do texto dos rótulos como branco */
+  display: block; /* Faz o rótulo ocupar uma linha inteira */
+  margin-bottom: 0.5em; /* Adiciona uma margem inferior ao rótulo */
+}
+
+form input, form textarea {
+  width: 100%; /* Faz os campos de entrada e texto ocuparem toda a largura do formulário */
+  padding: 0.8em; /* Adiciona preenchimento ao redor do texto nos campos */
+  margin-bottom: 1.2em; /* Adiciona uma margem inferior entre os campos */
+  border: 1px solid #888; /* Define a borda dos campos como cinza claro */
+  border-radius: 8px; /* Arredonda os cantos dos campos */
+  font-family: inherit; /* Herda a fonte do formulário */
+  font-size: 1rem; /* Define o tamanho da fonte dos campos */
+  background-color: #333; /* Define o fundo dos campos como cinza escuro */
+  color: #fff; /* Define a cor do texto dentro dos campos como branco */
+}
+
+form textarea {
+  resize: vertical; /* Permite que a área de texto seja redimensionada verticalmente */
+  min-height:120px; /* Define a altura mínima da área de texto */
+}
+
+form button {
+  width: auto; /* Deixa o botão com largura automática */
+  background-color: #6a11cb; /* Define a cor de fundo do botão dentro do formulário */
+}
+
+/* Links */
+a {
+  color: #00eaff; /* Define a cor dos links como azul claro */
+  font-weight: bold; /* Torna os links em negrito */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  transition: color 0.3s ease; /* Adiciona uma transição suave na mudança de cor dos links */
+}
+
+a:hover {
+  color: #00ffc3; /* Muda a cor dos links para azul mais claro ao passar o mouse */
+  text-shadow: 0 0 8px #00ffc3; /* Adiciona uma sombra no texto do link */
+}
+
+/* Rodapé */
+footer {
+  text-align: center; /* Centraliza o texto no rodapé */
+  padding: 1em; /* Adiciona preenchimento ao redor do conteúdo do rodapé */
+  background-color: #1e1e2f; /* Define o fundo do rodapé como escuro */
+  color: #fff; /* Define a cor do texto do rodapé como branco */
+  margin-top: 2em; /* Adiciona uma margem superior ao rodapé */
+}
+
+.sobre-container {
+  display: grid; /* Usa CSS Grid para organizar os elementos filhos em colunas e linhas */
+  grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanho igual */
+  gap: 2em; /* Espaço de 2em entre as colunas (e entre linhas, se houver) */
+  align-items: start; /* Alinha os itens ao topo da célula */
+  max-width: 1000px; /* Largura máxima do container */
+  margin: 3em auto; /* Espaçamento externo (topo e baixo: 3em, centralizado horizontalmente) */
+  padding: 2em; /* Espaçamento interno do container */
+  background-color: #2a2a40; /* Cor de fundo escura */
+  border-radius: 12px; /* Cantos arredondados */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* Sombra para destacar o bloco */
+}
+
+.sobre-texto {
+  color: #ddd; /* Cor do texto em cinza claro */
+}
+
+.sobre-texto h2 {
+  text-align: center; /* Centraliza o título "Sobre o Projeto" */
+  color: #ffd700; /* Cor dourada para destaque */
+}
+
+.sobre-texto h3 {
+  margin-top: 1.5em; /* Espaçamento acima dos subtítulos */
+  color: #00eaff; /* Cor azul-ciano para destaque */
+}
+
+.sobre-texto ol {
+  padding-left: 1.5em; /* Espaço à esquerda da lista ordenada */
+}
+
+.sobre-texto ol li {
+  margin-bottom: 0.6em; /* Espaçamento entre os itens da lista */
+  line-height: 1.6; /* Altura da linha para facilitar leitura */
+}
+
+.sobre-imagem img {
+  width: 100%; /* Imagem ocupa toda a largura da coluna */
+  border-radius: 8px; /* Cantos levemente arredondados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra leve na imagem */
+}
+
+h3 {
+  text-align: center; /* Centraliza qualquer elemento <h3> fora do escopo específico */
+}
+
+.imagem{
+  text-align: center;
+}
