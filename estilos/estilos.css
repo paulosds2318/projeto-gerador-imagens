@@ -19,6 +19,8 @@ h1 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); 
   margin-bottom: 1em; 
 
+
+}
 p {
   font-size: 1.1rem; 
   line-height: 1.8;
@@ -26,6 +28,8 @@ p {
   margin-bottom: 1em; 
   text-align: center; 
 
+
+}
 ol {
   margin: 0 auto; 
   width: 70%; 
@@ -74,6 +78,8 @@ nav ul li a:hover {
 }
 
 
+}
+
 table {
   width: 100%; 
   border-collapse: collapse; 
@@ -86,6 +92,10 @@ th, td {
   border: 1px solid #444;
   padding: 1em; 
   text-align: left; 
+}
+
+
+
 }
 
 th {
@@ -160,6 +170,8 @@ form button {
   background-color: #6a11cb; 
 
 
+}
+
 a {
   color: #00eaff; 
   font-weight: bold; 
@@ -216,6 +228,8 @@ footer {
   margin-bottom: 0.6em; 
   line-height: 1.6; 
 
+
+}
 .sobre-imagem img {
   width: 100%; 
   border-radius: 8px; 
@@ -229,3 +243,5 @@ h3 {
 .imagem{
   text-align: center;
 }
+
+
